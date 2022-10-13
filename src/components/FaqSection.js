@@ -1,6 +1,8 @@
+import styled from 'styled-components';
+import {About} from '../styles';
 export default function FaqSection() {
   return (
-    <div className="Faq">
+    <Faq>
       <h2>
         Any Questions <span>FAQ</span>
       </h2>
@@ -13,6 +15,7 @@ export default function FaqSection() {
             Consequuntur, nihil!
           </p>
         </div>
+        <div className="faq-line"></div>
       </div>
       <div className="question">
         <h4>Daily Schedule</h4>
@@ -23,6 +26,7 @@ export default function FaqSection() {
             Consequuntur, nihil!
           </p>
         </div>
+        <div className="faq-line"></div>
       </div>
       <div className="question">
         <h4>Payment Method</h4>
@@ -33,6 +37,7 @@ export default function FaqSection() {
             Consequuntur, nihil!
           </p>
         </div>
+        <div className="faq-line"></div>
       </div>
       <div className="question">
         <h4>What Product Do you offer</h4>
@@ -44,6 +49,38 @@ export default function FaqSection() {
           </p>
         </div>
       </div>
-    </div>
+    </Faq>
   );
 }
+
+const Faq = styled(About)`
+  display: block;
+
+  span {
+    display: block;
+  }
+  h2 {
+    padding-bottom: 2rem;
+    font-weight: lighter;
+  }
+
+  .faq-line {
+    background: #cccccc;
+    height: 0.2rem;
+    margin: 2rem 0;
+    width: 100%;
+  }
+
+  .question {
+    padding: 3rem 0;
+    cursor: pointer;
+  }
+
+  .answer {
+    padding: 2rem 0;
+
+    p {
+      padding: 1rem 0;
+    }
+  }
+`;

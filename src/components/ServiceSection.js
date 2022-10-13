@@ -53,7 +53,7 @@ export default function ServiceSection() {
 }
 
 const Service = styled(About)`
-  h3 {
+  h2 {
     padding-bottom: 5rem;
   }
 
