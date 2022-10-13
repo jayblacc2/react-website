@@ -3,7 +3,7 @@ import home1 from '../imgs/home1.png';
 
 export default function AboutSection() {
   return (
-    <div>
+    <div className="About">
       <div className="description">
         <div className="title">
           <div className="hide">
@@ -11,7 +11,7 @@ export default function AboutSection() {
           </div>
           <div className="hide">
             <h2>
-              your <span>dreams</span>come
+              your <span> dreams</span> come
             </h2>
           </div>
           <div className="hide">
