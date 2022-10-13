@@ -1,5 +1,6 @@
 import React from 'react';
 import AboutSection from '../components/AboutSection';
+import FaqSection from '../components/FaqSection';
 import ServiceSection from '../components/ServiceSection';
 
 export default function AboutUs() {
@@ -7,6 +8,7 @@ export default function AboutUs() {
     <>
       <AboutSection />
       <ServiceSection />
+      <FaqSection />
     </>
   );
 }
