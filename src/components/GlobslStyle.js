@@ -48,12 +48,18 @@ h2 {
   }
   a {
     font-weight: 1.1rem;
+    text-decoration: none;
+    color: #fff;
   }
   p {
     padding: 3rem 0;
     color: #ccc;
     font-size: 1.4rem;
     line-height: 150%;
+  }
+
+  ul {
+    list-style: none;
   }
 `;
 
