@@ -32,7 +32,8 @@ export const Hide = styled.div`
   overflow: hidden;
 `;
 
-//TODO style component globalStyle
+//TODO
+//style component globalStyle(createGlobalStyle)
 //styled Component local style
 //styled Component reuseable style
 //customize style comp style(NameCompStyle)
