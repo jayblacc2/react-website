@@ -4,9 +4,17 @@ import athlete from '../imgs/athlete-small.png';
 import theracer from '../imgs/theracer-small.png';
 import goodtimes from '../imgs/goodtimes-small.png';
 
-function OurWork() {
+import {motion} from 'framer-motion';
+import {pageAnimation} from '../animation';
+
+function Work() {
   return (
-    <Work>
+    <OurWork
+      exit="exit"
+      variants={pageAnimation}
+      initial="hidden"
+      animate="show"
+    >
       <Movie>
         <h2>The Athlete</h2>
         <div className="line"></div>
@@ -28,13 +36,13 @@ function OurWork() {
           <img src={goodtimes} alt="goodtimes" />
         </Link>
       </Movie>
-    </Work>
+    </OurWork>
   );
 }
 
-export default OurWork;
+export default Work;
 
-const Work = styled.div`
+const OurWork = styled(motion.div)`
   min-height: 100vh;
   overflow: hidden;
   padding: 5rem 10rem;
