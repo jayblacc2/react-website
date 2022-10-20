@@ -2,6 +2,9 @@ import styled from 'styled-components';
 import {MovieState} from '../movieState';
 import {useEffect, useState} from 'react';
 
+import {motion} from 'framer-motion';
+import {pageAnimation} from '../animation';
+
 function MovieDetail() {
   const [movies, setMovies] = useState(MovieState);
   const [movie, setMovie] = useState(null);
@@ -18,7 +21,12 @@ function MovieDetail() {
   return (
     <>
       {movie && (
-        <Details>
+        <Details
+          exit="exit"
+          variants={pageAnimation}
+          initial="hidden"
+          animate="show"
+        >
           <HeadLine>
             <h2>{movie.title}</h2>
             <img src={movie.mainImg} alt="mainImage" />
@@ -53,7 +61,7 @@ const Award = ({title, description}) => {
   );
 };
 
-const Details = styled.div`
+const Details = styled(motion.div)`
   color: #fff;
 `;
 const HeadLine = styled.div`

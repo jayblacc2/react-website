@@ -19,4 +19,9 @@ const pageAnimation = {
   },
 };
 
-export {pageAnimation};
+const titleAni = {
+  hidden: {y: 200},
+  show: {y: 0, transition: {duration: 0.7, ease: 'easeOut'}},
+};
+
+export {pageAnimation, titleAni};

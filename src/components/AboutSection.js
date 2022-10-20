@@ -1,6 +1,7 @@
 import React from 'react';
 import home1 from '../imgs/home1.png';
 import {About, Description, Image, Hide} from '../styles';
+import {titleAni} from '../animation';
 import {motion} from 'framer-motion';
 
 export default function AboutSection() {
